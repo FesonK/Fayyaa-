@@ -1,0 +1,32 @@
+/**
+ * Spacing scale for Fayyaa app
+ * Based on 4px grid system
+ */
+
+export const spacing = {
+  xs: 4,
+  sm: 8,
+  md: 16,
+  lg: 24,
+  xl: 32,
+  '2xl': 40,
+  '3xl': 48,
+  '4xl': 64,
+} as const;
+
+export type SpacingKey = keyof typeof spacing;
+
+/**
+ * Border radius values
+ */
+export const borderRadius = {
+  none: 0,
+  sm: 4,
+  md: 8,
+  lg: 12,
+  xl: 16,
+  '2xl': 24,
+  full: 9999,
+} as const;
+
+export type BorderRadiusKey = keyof typeof borderRadius;
